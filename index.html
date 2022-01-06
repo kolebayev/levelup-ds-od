@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>My Wish — Components</title>
+    <title>One Doc — Components</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/index.css" />
 
     <!-- компоненты -->
-    <!-- <link rel="stylesheet" href="./css/components/mw-grid.css" /> -->
+    <link rel="stylesheet" href="./css/components/od-header.css" />
     <!-- компоненты -->
 
     <!-- витрина -->
@@ -30,7 +30,7 @@
   <body>
     <header>
       <div class="header">
-        <div class="header__left">My&#160;Wish&#160;—&#160;Components</div>
+        <div class="header__left">One&#160;Doc&#160;—&#160;Components</div>
         <div class="header__rigth">Демо&#160;HTML&#160;Акакдемии</div>
       </div>
     </header>
@@ -42,36 +42,35 @@
           <div class="row-block__description">токены дизайн-системы</div>
         </div>
 
-        <div class="mw-grid mw-grid_col_4 mw-grid_col-gap_m">
+        <div class="tokens-grid">
           <div class="tokens">
-            <div class="row-block__description">Цвета текста</div>
+            <div class="row-block__description">Акцентные цвета</div>
 
             <div class="token">
-              <div class="token__bubble token__bubble_text_accent"></div>
+              <div class="token__bubble token__bubble_accent_main"></div>
               <div class="token__info">
-                <div class="color-name">Акцентный</div>
-                <div class="color-description">Акцентный</div>
-                <code>--color-text-accent</code>
+                <div class="color-name">Главный</div>
+                <code>--color-accent-main</code>
               </div>
             </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_accent_success"></div>
+              <div class="token__info">
+                <div class="color-name">Успешного действия</div>
+                <code>--color-accent-success</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="tokens">
+            <div class="row-block__description">Цвета текста</div>
 
             <div class="token">
               <div class="token__bubble token__bubble_text_primary"></div>
               <div class="token__info">
                 <div class="color-name">Основной</div>
-                <div class="color-description">Акцентный</div>
                 <code>--color-text-primary</code>
-              </div>
-            </div>
-
-            <div class="token">
-              <div
-                class="token__bubble token__bubble_text_primary-inverse"
-              ></div>
-              <div class="token__info">
-                <div class="color-name">Основной в инверсии</div>
-                <div class="color-description">Акцентный</div>
-                <code>--color-text-primary-inverse</code>
               </div>
             </div>
 
@@ -79,26 +78,23 @@
               <div class="token__bubble token__bubble_text_secondary"></div>
               <div class="token__info">
                 <div class="color-name">Второстепенный</div>
-                <div class="color-description">Акцентный</div>
                 <code>--color-text-secondary</code>
               </div>
             </div>
 
             <div class="token">
-              <div class="token__bubble token__bubble_text_success"></div>
+              <div class="token__bubble token__bubble_text_main"></div>
               <div class="token__info">
-                <div class="color-name">Успешного действия</div>
-                <div class="color-description">Акцентный</div>
-                <code>--color-text-success</code>
+                <div class="color-name">Главный</div>
+                <code>--color-text-main</code>
               </div>
             </div>
 
             <div class="token">
-              <div class="token__bubble token__bubble_text_error"></div>
+              <div class="token__bubble token__bubble_text_inverse"></div>
               <div class="token__info">
-                <div class="color-name">Ошибки</div>
-                <div class="color-description">Акцентный</div>
-                <code>--color-text-error</code>
+                <div class="color-name">Инверсный</div>
+                <code>--color-text-inverse</code>
               </div>
             </div>
           </div>
@@ -107,79 +103,54 @@
             <div class="row-block__description">Цвета фонов</div>
 
             <div class="token">
-              <div class="token__bubble token__bubble_bg_accent"></div>
-              <div class="token__info">
-                <div class="color-name">Акцентный</div>
-                <div class="color-description">Точка вниманния</div>
-                <code>--color-bg-accent</code>
-              </div>
-            </div>
-
-            <div class="token">
               <div class="token__bubble token__bubble_bg_primary"></div>
               <div class="token__info">
                 <div class="color-name">Основной</div>
-                <div class="color-description">Основной</div>
                 <code>--color-bg-primary</code>
               </div>
             </div>
 
             <div class="token">
-              <div class="token__bubble token__bubble_bg_secondary"></div>
+              <div class="token__bubble token__bubble_bg_inverse"></div>
               <div class="token__info">
-                <div class="color-name">Второстепенный</div>
-                <div class="color-description">Второстепенный</div>
-                <code>--color-bg-secondary</code>
+                <div class="color-name">Инверсный</div>
+                <code>--color-bg-inverse</code>
               </div>
             </div>
 
             <div class="token">
-              <div class="token__bubble token__bubble_bg_warning"></div>
+              <div class="token__bubble token__bubble_bg_substrate"></div>
               <div class="token__info">
-                <div class="color-name">Предупреждение</div>
-                <div class="color-description">Яркий</div>
-                <code>--color-bg-warning</code>
+                <div class="color-name">Подложки</div>
+                <code>--color-bg-substrate</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_bg_divider"></div>
+              <div class="token__info">
+                <div class="color-name">Разделители</div>
+                <code>--color-bg-divider</code>
               </div>
             </div>
           </div>
 
           <div class="tokens">
-            <div class="row-block__description">Скругления</div>
-
-            <div class="token">
-              <div class="token__bubble token__bubble_border-radius_s"></div>
-              <div class="token__info">
-                <div class="color-name">6px</div>
-                <div class="color-description">Акцентный</div>
-                <code>--border-radius-s</code>
+            <div class="tokens-merge">
+              <div class="row-block__description">Скругления</div>
+              <div class="token">
+                <div class="token__bubble token__bubble_border-radius_s"></div>
+                <div class="token__info">
+                  <div class="color-name">6px</div>
+                  <code>--border-radius-s</code>
+                </div>
               </div>
             </div>
 
-            <div class="token">
-              <div class="token__bubble token__bubble_border-radius_m"></div>
-              <div class="token__info">
-                <div class="color-name">16px</div>
-                <div class="color-description">Акцентный</div>
-                <code>--border-radius-m</code>
-              </div>
+            <div class="tokens-merge">
+              <div class="row-block__description">Отступы</div>
+              <p>Отступы кратны 4</p>
             </div>
-
-            <div class="token">
-              <div class="token__bubble token__bubble_border-radius_half"></div>
-              <div class="token__info">
-                <div class="color-name">50%</div>
-                <div class="color-description">Акцентный</div>
-                <code>--border-radius-half</code>
-              </div>
-            </div>
-          </div>
-
-          <div class="tokens">
-            <div class="row-block__description">Отступы</div>
-            <p>
-              на текущем этапе выделенных значений нет, <br />но вы заметите,
-              что они кратны 4.<br />обсудите это с дизайнером
-            </p>
           </div>
         </div>
       </div>

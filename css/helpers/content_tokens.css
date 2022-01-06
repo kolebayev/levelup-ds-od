@@ -1,8 +1,20 @@
+.tokens-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 32px;
+}
+
 .token {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   margin-bottom: 20px;
+}
+
+.tokens-merge {
+  display: block;
+  margin-bottom: 32px;
 }
 
 .token:last-child {
@@ -12,7 +24,7 @@
 .token__bubble {
   width: 32px;
   height: 32px;
-  border-radius: var(--border-radius-half);
+  border-radius: 50%;
 }
 
 .token__info {
@@ -23,73 +35,56 @@
   margin-bottom: 2px;
 }
 
-.color-description {
-  display: none;
-  margin-bottom: 2px;
-  font-size: 11px;
-  color: var(--color-text-secondary);
-}
-
 .token__info code {
   padding: 4px 8px;
   font-size: 10px;
-  background-color: var(--color-bg-secondary);
+  background-color: #f4f3f5;
   border-radius: 8px;
+}
+
+.token__bubble_accent_main {
+  background-color: var(--color-accent-main);
+}
+
+.token__bubble_accent_success {
+  background-color: var(--color-accent-success);
 }
 
 .token__bubble_text_primary {
   background-color: var(--color-text-primary);
 }
 
-.token__bubble_text_primary-inverse {
-  background-color: var(--color-text-primary-inverse);
-  border: 1px solid #ebebeb;
-}
-
 .token__bubble_text_secondary {
   background-color: var(--color-text-secondary);
 }
 
-.token__bubble_text_accent {
-  background-color: var(--color-text-accent);
+.token__bubble_text_main {
+  background-color: var(--color-text-main);
 }
 
-.token__bubble_text_success {
-  background-color: var(--color-text-success);
-}
-
-.token__bubble_text_error {
-  background-color: var(--color-text-error);
-}
-
-.token__bubble_bg_accent {
-  background-color: var(--color-bg-accent);
+.token__bubble_text_inverse {
+  background-color: var(--color-text-inverse);
+  border: 1px solid #ebebeb;
 }
 
 .token__bubble_bg_primary {
   background-color: var(--color-bg-primary);
+}
+
+.token__bubble_bg_inverse {
+  background-color: var(--color-bg-inverse);
+}
+
+.token__bubble_bg_substrate {
+  background-color: var(--color-bg-substrate);
   border: 1px solid #ebebeb;
 }
 
-.token__bubble_bg_secondary {
-  background-color: var(--color-bg-secondary);
-}
-
-.token__bubble_bg_warning {
-  background-color: var(--color-bg-warning);
+.token__bubble_bg_divider {
+  background-color: var(--color-bg-divider);
 }
 
 .token__bubble_border-radius_s {
   border: 1px dashed #000000;
   border-radius: var(--border-radius-s);
-}
-
-.token__bubble_border-radius_m {
-  border: 1px dashed #000000;
-  border-radius: var(--border-radius-m);
-}
-
-.token__bubble_border-radius_half {
-  border: 1px dashed #000000;
-  border-radius: var(--border-radius-half);
 }
