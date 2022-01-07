@@ -1,0 +1,31 @@
+.mw-text {
+  line-height: 140%;
+}
+
+.mw-text_size_xs {
+  font-size: 14px;
+}
+
+.mw-text_size_s {
+  font-size: 16px;
+}
+
+.mw-text_size_m {
+  font-size: 18px;
+}
+
+.mw-text_size_l {
+  font-size: 24px;
+}
+
+.mw-text_weight_regular {
+  font-weight: 400;
+}
+
+.mw-text_weight_medium {
+  font-weight: 500;
+}
+
+.mw-text_weight_bold {
+  font-weight: 700;
+}
