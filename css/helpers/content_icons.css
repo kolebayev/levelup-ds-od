@@ -12,6 +12,10 @@
   margin-bottom: 20px;
 }
 
+.icon__is-not-ready {
+  opacity: 0.3;
+}
+
 .icon__description {
   margin-top: 8px;
   color: var(--color-text-secondary);
@@ -41,10 +45,10 @@
   margin-right: 12px;
 }
 
-.icon__wrapper_bg_default {
-  background-color: var(--color-bg-default);
+.icon__wrapper_bg_primary {
+  background-color: var(--color-bg-primary);
 }
 
 .icon__wrapper_bg_accent {
-  background-color: var(--color-bg-accent);
+  background-color: var(--color-accent-main);
 }
