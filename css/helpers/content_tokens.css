@@ -69,6 +69,7 @@
 
 .token__bubble_bg_primary {
   background-color: var(--color-bg-primary);
+  border: 1px solid #ebebeb;
 }
 
 .token__bubble_bg_inverse {
