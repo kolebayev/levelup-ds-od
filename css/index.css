@@ -4,8 +4,13 @@
   --color-accent-success: #33a459;
   /* цвета текста */
   --color-text-primary: #000000;
+
+  /* opacity 60 */
   --color-text-secondary: #666666;
+
+  /* opacity 40 */
   --color-text-main: #999999;
+
   --color-text-inverse: #ffffff;
   /* цвета фонов */
   --color-bg-primary: #fff;

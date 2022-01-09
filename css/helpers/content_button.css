@@ -1,15 +1,21 @@
-.btn__toolbar {
+.btn__preview {
+  display: block;
   margin-bottom: 24px;
 }
 
-.btn__toolbar label:not(:first-child) {
-  margin-left: 20px;
-}
-
-.btn__preview {
+.btn__preview > div {
   display: flex;
+  flex-direction: row;
   align-items: center;
   height: 60px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
+.btn__preview > div > pre {
+  width: 100%;
+  margin-left: 12px;
+}
+
+.btn__wrapper {
+  width: 200px;
+}
