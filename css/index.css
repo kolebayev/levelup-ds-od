@@ -23,6 +23,8 @@
   --color-control-border: rgba(0, 0, 0, 0.2);
   --color-control-accent-border: rgba(26, 154, 246, 0.6);
   --color-control-hover: rgba(0, 0, 0, 0.05);
+
+  --color-shadow: rgba(52, 60, 71, 0.2);
 }
 
 * {
