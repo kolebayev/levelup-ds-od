@@ -1,6 +1,6 @@
 .btn__preview {
   display: block;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .btn__preview > div {
@@ -9,6 +9,10 @@
   align-items: center;
   height: 60px;
   margin-bottom: 20px;
+}
+
+.btn__preview > div:last-child {
+  margin-bottom: 0;
 }
 
 .btn__preview > div > pre {

@@ -1,5 +1,6 @@
 .collapse__preview > div {
   display: flex;
+  align-items: center;
 }
 
 .collapse__preview > div:first-child {

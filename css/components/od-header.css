@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .od-header_side_right img {
