@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/components/od-sidenav.css" />
     <link rel="stylesheet" href="./css/components/od-link.css" />
     <link rel="stylesheet" href="./css/components/od-card.css" />
+    <link rel="stylesheet" href="./css/components/od-collapse.css" />
     <!-- компоненты -->
 
     <!-- витрина -->
@@ -34,6 +35,7 @@
     <link rel="stylesheet" href="./css/helpers/content_sidenav.css" />
     <link rel="stylesheet" href="./css/helpers/content_link.css" />
     <link rel="stylesheet" href="./css/helpers/content_card.css" />
+    <link rel="stylesheet" href="./css/helpers/content_collapse.css" />
     <!-- витрина -->
 
     <link rel="stylesheet" href="./css/stackoverflow-light.min.css" />
@@ -1114,13 +1116,13 @@
       <!-- карточка -->
       <div class="row-block">
         <div class="row-block__info">
-          <div class="row-block__name">Карточка документа</div>
+          <div class="row-block__name">Карточка</div>
           <div class="row-block__description">od-card</div>
         </div>
 
         <div class="card">
           <div class="row-block__description">
-            Карточка документа
+            Неразрывные пробелы в названии использовать не нужно, максимум 2 строки
           </div>
           <div class="card__preview">
            <div class="od-card">
@@ -1151,6 +1153,63 @@
         </div>
       </div>
       <!-- карточка -->
+
+      <!-- управление разделом -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Коллапс</div>
+          <div class="row-block__description">od-collapse</div>
+        </div>
+
+        <div class="collapse">
+          <div class="row-block__description">
+            По сути работы похож на классический аккордион, только блоки разворачиваются независимо
+          </div>
+          <div class="collapse__preview">
+            <div>
+              <div class="od-collapse od-collapse_state_is-opened">
+                <div class="od-icon od-icon_size_m">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m21.094 15.974-2.188 2.052-6.406-6.833-6.406 6.833-2.188-2.052L12.5 6.807l8.594 9.167Z"
+                    />
+                  </svg>
+                </div>
+                <p class="od-text od-text_size_l od-text_weight_bold">Открытый раздел</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-collapse od-collapse_state_is-opened"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="od-collapse od-collapse_state_is-closed">
+                <div class="od-icon od-icon_size_m">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m2.906 10.026 2.188-2.052 6.406 6.833 6.406-6.833 2.188 2.052-8.594 9.167-8.594-9.167Z"
+                    />
+                  </svg>
+                </div>
+                <p class="od-text od-text_size_l od-text_weight_bold">Закрытый раздел</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-collapse od-collapse_state_is-closed"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- управление разделом -->
 
     </main>
     <script src="./js/highlight.min.js"></script>
