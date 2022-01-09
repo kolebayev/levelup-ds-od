@@ -1012,10 +1012,61 @@
 
         <div class="sidenav">
           <div class="row-block__description">
-            Элементы боковой навигации приложения
+            Элементы боковой навигации приложения. Все пробелы должны быть неразрывными: <strong>&ampnbsp;</strong>
           </div>
-          <div>
-            
+          <div class="sidenav__preview">
+            <div>
+              <div class="od-sidenav od-sidenav__heading od-sidenav__heading_state_is-opened">
+                <div class="od-icon od-icon_size_s">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m12.354 9.646-.708.707L8 6.708l-3.646 3.647-.708-.708L8 5.293l4.354 4.353Z"
+                    />
+                  </svg>
+                </div>
+                <p class="od-text od-text_size_xs od-text_weight_regular">Открытый&nbsp;заголовок&nbsp;с&nbsp;неразрывным&nbsp;пробелом</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-sidenav od-sidenav__heading od-sidenav__heading_state_is-opened"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="od-sidenav od-sidenav__heading od-sidenav__heading_state_is-closed">
+                <div class="od-icon od-icon_size_s">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m3.646 6.354.708-.708L8 9.293l3.646-3.647.708.708L8 10.707 3.646 6.354Z"
+                    />
+                  </svg>
+                </div>
+                <p class="od-text od-text_size_xs od-text_weight_regular">Закрытый&nbsp;заголовок&nbsp;с&nbsp;неразрывным&nbsp;пробелом</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-sidenav od-sidenav__heading od-sidenav__heading_state_is-closed"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="od-sidenav od-sidenav__list-item od-sidenav__heading_state_default">
+                <p class="od-text od-text_size_s od-text_weight_regular">Пункт&nbsp;меню&nbsp;с&nbsp;неразрывным&nbsp;пробелом</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-sidenav od-sidenav__list-item od-sidenav__heading_state_default"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="od-sidenav od-sidenav__list-item od-sidenav__list-item_state_selected">
+                <p class="od-text od-text_size_s od-text_weight_regular">Пункт&nbsp;меню&nbsp;с&nbsp;неразрывным&nbsp;пробелом</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-sidenav od-sidenav__list-item od-sidenav__list-item_state_selected"&gt;...&lt;/div&gt;</code></pre>
+            </div>
           </div>
         </div>
       </div>
