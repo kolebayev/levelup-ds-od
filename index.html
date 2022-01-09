@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./css/components/od-logo.css" />
     <link rel="stylesheet" href="./css/components/od-search-field.css" />
     <link rel="stylesheet" href="./css/components/od-button.css" />
+    <link rel="stylesheet" href="./css/components/od-radio-group.css" />
+    <link rel="stylesheet" href="./css/components/od-sidenav.css" />
     <!-- компоненты -->
 
     <!-- витрина -->
@@ -22,16 +24,12 @@
     <link rel="stylesheet" href="./css/helpers/content_text.css" />
     <link rel="stylesheet" href="./css/helpers/content_layout.css" />
     <link rel="stylesheet" href="./css/helpers/content_footer.css" />
-    <!-- <link rel="stylesheet" href="./css/helpers/content_grid.css" /> -->
     <link rel="stylesheet" href="./css/helpers/content_icons.css" />
     <link rel="stylesheet" href="./css/helpers/content_logo.css" />
     <link rel="stylesheet" href="./css/helpers/content_search-field.css" />
     <link rel="stylesheet" href="./css/helpers/content_button.css" />
-    <!-- <link rel="stylesheet" href="./css/helpers/content_chips.css" /> -->
-    <!-- <link rel="stylesheet" href="./css/helpers/content_checkbox.css" /> -->
-    <!-- <link rel="stylesheet" href="./css/helpers/content_input.css" /> -->
-    <!-- <link rel="stylesheet" href="./css/helpers/content_link.css" /> -->
-    <!-- <link rel="stylesheet" href="./css/helpers/content_giftcard.css" /> -->
+    <link rel="stylesheet" href="./css/helpers/content_radio-group.css" />
+    <link rel="stylesheet" href="./css/helpers/content_sidenav.css" />
     <!-- витрина -->
 
     <link rel="stylesheet" href="./css/stackoverflow-light.min.css" />
@@ -332,7 +330,7 @@
           <div class="od-footer">
             <p class="od-footer__label">Powered <a href="">by OneDoc</a></p>
           </div>
-          <pre><code class="language-html">&lt;div class="od-header"&gt;...&lt;/div&gt;</code></pre>
+          <pre><code class="language-html">&lt;div class="od-footer"&gt;...&lt;/div&gt;</code></pre>
         </div>
       </div>
       <!-- футер -->
@@ -913,321 +911,116 @@
       </div>
       <!-- кнопка -->
 
-      <!-- чипс -->
+      <!-- радиогруппа -->
       <div class="row-block">
         <div class="row-block__info">
-          <div class="row-block__name">Чипс</div>
-          <div class="row-block__description">mw-chips</div>
+          <div class="row-block__name">Горизонтальный переключатель</div>
+          <div class="row-block__description">od-radio-group</div>
         </div>
 
-        <div class="chips">
+        <div class="radio-group">
           <div class="row-block__description">
             Выполняет фильтрацию контента, работает по принципу радиокнопки. В
-            интерфейсе обычно используется в количестве 2+
+            интерфейсе обычно используется в количестве 2+.
           </div>
           <div>
-            <div class="chips__wrapper">
-              <div class="mw-chips mw-chips_size_m">
+            <div class="radio-group__wrapper">
+              <div class="od-radio-group">
                 <input
                   type="radio"
-                  id="radio-all"
+                  id="radio-1"
                   name="radio-categories"
                   value="all"
-                  checked
+                  checked="true"
                 />
-                <label
-                  for="radio-all"
-                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium"
-                  >Все</label
-                >
+                <label for="radio-1">
+                  <div class="od-icon od-icon_size_m">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Zm12-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-4Zm-2 12a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4Zm-8-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2H5Z"
+                      />
+                    </svg>
+                  </div>
+                </label>
+
+                <input
+                type="radio"
+                id="radio-2"
+                name="radio-categories"
+                value="sport"
+              />
+              <label for="radio-2">
+                <div class="od-icon od-icon_size_m">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 3a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2H3Zm0 5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm-1 6a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm7-14a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Zm-1 6a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Z"
+                    />
+                  </svg>
+                </div>
+              </label>
+
                 <input
                   type="radio"
-                  id="radio-sport"
+                  id="radio-3"
                   name="radio-categories"
                   value="sport"
                 />
-                <label
-                  for="radio-sport"
-                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium"
-                  >Спорт</label
-                >
-                <input
-                  type="radio"
-                  id="radio-books"
-                  name="radio-categories"
-                  value="books"
-                />
-                <label
-                  for="radio-books"
-                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium"
-                  >Книги</label
-                >
+                <label for="radio-3">
+                  <div class="od-icon od-icon_size_m">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 3a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2H3Zm0 5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm-1 6a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm7-14a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Zm-1 6a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Z"
+                      />
+                    </svg>
+                  </div>
+                </label>
               </div>
-              <pre><code class="language-html">&lt;div class="mw-chips mw-chips_size_m"&gt;...&lt;/div&gt;</code></pre>
+              <pre><code class="language-html">&lt;div class="od-radio-group"&gt;...&lt;/div&gt;</code></pre>
             </div>
           </div>
         </div>
       </div>
-      <!-- чипс -->
+      <!-- радиогруппа -->
 
-      <!-- чекбокс -->
+      <!-- Боковая навигация -->
       <div class="row-block">
         <div class="row-block__info">
-          <div class="row-block__name">Чекбокс</div>
-          <div class="row-block__description">mw-checkbox</div>
+          <div class="row-block__name">Боковая навигация</div>
+          <div class="row-block__description">od-sidenav</div>
         </div>
 
-        <div class="checkbox">
+        <div class="sidenav">
           <div class="row-block__description">
-            Чекбокс — элемент с двумя состояниями: выбран и не выбран.
-            Используйте чекбокс, если хотите, чтобы пользователь сделал выбор.
+            Элементы боковой навигации приложения
           </div>
           <div>
-            <div class="checkbox__wrapper">
-              <label class="mw-checkbox">
-                <input type="checkbox" value="value" />
-                <span
-                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular"
-                  >Выбрать</span
-                >
-              </label>
-              <div>Активный</div>
-              <pre><code class="language-html">&lt;label class="mw-checkbox"&gt;...&lt;/label&gt;</code></pre>
-            </div>
-            <div class="checkbox__wrapper">
-              <label class="mw-checkbox mw-checkbox_is-disabled_true">
-                <input type="checkbox" value="value" disabled />
-                <span
-                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular"
-                  >Выбрать</span
-                >
-              </label>
-              <div>Неактивный</div>
-              <pre><code class="language-html">&lt;label class="mw-checkbox"&gt;...&lt;/label&gt;</code></pre>
-            </div>
+            
           </div>
         </div>
       </div>
-      <!-- чекбокс -->
+      <!-- Боковая навигация -->
 
-      <!-- поле ввода -->
-      <div class="row-block">
-        <div class="row-block__info">
-          <div class="row-block__name">Поле ввода</div>
-          <div class="row-block__description">mw-input</div>
-        </div>
-
-        <div class="input">
-          <div class="row-block__description">
-            Поле для ввода текста в одну строку
-          </div>
-
-          <div class="input__toolbar">
-            <label
-              >Состояние (state)
-              <select
-                id="input_state"
-                onchange="getInputActiveSelectOption('input_state')"
-              >
-                <option value="default" selected="true">default</option>
-                <option value="error">error</option>
-              </select></label
-            >
-            <label
-              >Иконка (has-icon)
-              <select
-                id="input_has-icon"
-                onchange="getInputActiveSelectOption('input_has-icon')"
-              >
-                <option value="no-icon" selected="true">no icon</option>
-                <option value="icon-left">icon left</option>
-                <option value="iсon-right">icon right</option>
-              </select></label
-            >
-          </div>
-
-          <div class="input__preview">
-            <div class="mw-input">
-              <input
-                class="mw-input__input mw-input_has-icon_none"
-                placeholder="Введите текст"
-                type="text"
-                name="name"
-                id="preview-input"
-              />
-              <p
-                class="mw-input__message mw-text_size_xs mw-text_line-height_s mw-text_weight_regular"
-              >
-                Укажите город.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <pre><code id="input_code" class="language-html">&lt;div class="mw-input"&gt;...&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <!-- поле ввода -->
-
-      <!-- ссылка -->
-      <div class="row-block">
-        <div class="row-block__info">
-          <div class="row-block__name">Ссылка</div>
-          <div class="row-block__description">mw-link</div>
-        </div>
-
-        <div>
-          <div class="row-block__description">Классическая ссылка</div>
-          <div class="link-wrapper">
-            <div class="mw-link mw-link_type_simple">ссылка</div>
-            <p>простая</p>
-            <div>
-              <pre><code class="language-html">&lt;div class="mw-link mw-link_type_simple"&gt;...&lt;/div&gt;</code></pre>
-            </div>
-          </div>
-          <div class="link-wrapper">
-            <div class="mw-link mw-link_type_direction-back">
-              <svg
-                width="12"
-                height="24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.6402 5.2318c.4243.3536.4816.9841.128 1.4084L3.3017 12l4.4665 5.3598c.3536.4243.2963 1.0549-.128 1.4084-.4243.3536-1.0549.2963-1.4084-.128l-5-6a1 1 0 0 1 0-1.2804l5-6c.3535-.4242.9841-.4816 1.4084-.128Z"
-                  fill="#7D00FB"
-                />
-              </svg>
-              ссылка
-            </div>
-            <p>c направлением</p>
-            <div>
-              <pre><code class="language-html">&lt;div class="mw-link mw-link_type_directionBack"&gt;...&lt;/div&gt;</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ссылка -->
-
-      <!-- карточка подарка -->
-      <div class="row-block">
-        <div class="row-block__info">
-          <div class="row-block__name">Карточка подарка</div>
-          <div class="row-block__description">mw-giftcard</div>
-        </div>
-
-        <div>
-          <div class="row-block__description">
-            Карточка подарка. На проекте рекомендуется использовать в связке с
-            mw-grid
-          </div>
-          <div class="giftcard-preview">
-            <div class="mw-giftcard mw-giftcard_status_clear">
-              <div class="mw-giftcard_image">
-                <img alt="gift image" />
-              </div>
-              <div
-                class="mw-giftcard_heading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
-              >
-                MIZU бутылка для воды металлическая
-              </div>
-              <div
-                class="mw-giftcard_subheading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
-              >
-                Спорт
-              </div>
-              <div class="mw-giftcard_badge">
-                <div
-                  class="mw-giftcard_badge_image mw-icon mw-icon_name_miracle mw-icon_view_primary-inverse"
-                ></div>
-                <div
-                  class="mw-giftcard_badge_text mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"
-                ></div>
-              </div>
-            </div>
-            <div class="mw-giftcard mw-giftcard_status_is-giving">
-              <div class="mw-giftcard_image">
-                <img alt="gift image" />
-              </div>
-              <div
-                class="mw-giftcard_heading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
-              >
-                4K UHD Smart LED проек...
-              </div>
-              <div
-                class="mw-giftcard_subheading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
-              >
-                Техника
-              </div>
-              <div class="mw-giftcard_badge">
-                <div
-                  class="mw-giftcard_badge_image mw-icon mw-icon_name_miracle mw-icon_view_primary-inverse"
-                ></div>
-                <div
-                  class="mw-giftcard_badge_text mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"
-                >
-                  Уже дарят
-                </div>
-              </div>
-            </div>
-            <div class="mw-giftcard mw-giftcard_status_you-giving">
-              <div class="mw-giftcard_image">
-                <img alt="gift image" />
-              </div>
-              <div
-                class="mw-giftcard_heading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
-              >
-                Мультипекарь REDMOND
-              </div>
-              <div
-                class="mw-giftcard_subheading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
-              >
-                Техника
-              </div>
-              <div class="mw-giftcard_badge">
-                <div
-                  class="mw-giftcard_badge_image mw-icon mw-icon_name_hand mw-icon_view_primary-inverse"
-                ></div>
-                <div
-                  class="mw-giftcard_badge_text mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"
-                >
-                  Вы дарите
-                </div>
-              </div>
-            </div>
-            <div class="mw-giftcard mw-giftcard_status_already-given">
-              <div class="mw-giftcard_image">
-                <img alt="gift image" />
-              </div>
-              <div
-                class="mw-giftcard_heading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
-              >
-                Монстера
-              </div>
-              <div
-                class="mw-giftcard_subheading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
-              >
-                Дом и уют
-              </div>
-              <div class="mw-giftcard_badge">
-                <div
-                  class="mw-giftcard_badge_image mw-icon mw-icon_name_present mw-icon_view_primary-inverse"
-                ></div>
-                <div
-                  class="mw-giftcard_badge_text mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"
-                >
-                  Подарили
-                </div>
-              </div>
-            </div>
-          </div>
-          <pre><code class="language-html">&lt;div class="mw-giftcard mw-giftcard_status_is-giving"&gt;...&lt;/div&gt;</code></pre>
-        </div>
-      </div>
-      <!-- карточка подарка -->
     </main>
     <script src="./js/highlight.min.js"></script>
     <script>
