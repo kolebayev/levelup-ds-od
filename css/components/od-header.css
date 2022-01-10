@@ -33,3 +33,21 @@
 .od-header__logo div {
   margin-left: 8px;
 }
+
+.od-header__notifications {
+  position: relative;
+  margin-right: 16px;
+}
+
+.od-header__notifications > .od-notifications-menu {
+  display: none;
+  right: 0;
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  z-index: 9999;
+}
+
+.od-header__notifications:hover > .od-notifications-menu {
+  display: block;
+}

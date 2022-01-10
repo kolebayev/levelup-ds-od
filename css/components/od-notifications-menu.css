@@ -27,6 +27,10 @@
   color: rgba(0, 0, 0, 0.2);
 }
 
+.od-notifications-menu__item > div {
+  color: var(--color-text-primary);
+}
+
 .od-notifications-menu__item div.od-badge {
   display: none;
 }
