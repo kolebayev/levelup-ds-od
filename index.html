@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./css/components/od-link.css" />
     <link rel="stylesheet" href="./css/components/od-card.css" />
     <link rel="stylesheet" href="./css/components/od-collapse.css" />
+    <link rel="stylesheet" href="./css/components/od-badge.css" />
+    <link rel="stylesheet" href="./css/components/od-notifications-menu.css" />
     <!-- компоненты -->
 
     <!-- витрина -->
@@ -36,6 +38,8 @@
     <link rel="stylesheet" href="./css/helpers/content_link.css" />
     <link rel="stylesheet" href="./css/helpers/content_card.css" />
     <link rel="stylesheet" href="./css/helpers/content_collapse.css" />
+    <link rel="stylesheet" href="./css/helpers/content_badge.css" />
+    <link rel="stylesheet" href="./css/helpers/content_notifications-menu.css" />
     <!-- витрина -->
 
     <link rel="stylesheet" href="./css/stackoverflow-light.min.css" />
@@ -1223,6 +1227,124 @@
         </div>
       </div>
       <!-- управление разделом -->
+
+      <!-- бейдж -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Бейдж</div>
+          <div class="row-block__description">od-badge</div>
+        </div>
+
+        <div class="collapse">
+          <div class="row-block__description">
+            Бейдж используется для отображения статуса. Применяется в строке нотификаций и карточке документа.
+          </div>
+          <div class="badge__preview">
+
+            <div>
+              <div class="badge__wrapper">
+                <div class="od-badge od-badge_status_new od-badge_size_s">
+                  Новое
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-badge od-badge_status_new od-badge_size_s"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="badge__wrapper">
+                <div class="od-badge od-badge_status_new od-badge_size_m">
+                  Новое
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-badge od-badge_status_new od-badge_size_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="badge__wrapper">
+                <div class="od-badge od-badge_status_waiting od-badge_size_s">
+                  Ждет подписания
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-badge od-badge_status_waiting od-badge_size_s"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="badge__wrapper">
+                <div class="od-badge od-badge_status_waiting od-badge_size_m">
+                  Ждет подписания
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-badge od-badge_status_waiting od-badge_size_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="badge__wrapper">
+                <div class="od-badge od-badge_status_signed od-badge_size_s">
+                  Подписано
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-badge od-badge_status_signed od-badge_size_s"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="badge__wrapper">
+                <div class="od-badge od-badge_status_signed od-badge_size_m">
+                  Подписано
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-badge od-badge_status_signed od-badge_size_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="badge__wrapper">
+                <div class="od-badge od-badge_status_expired od-badge_size_s">
+                  Просрочено
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-badge od-badge_status_expired od-badge_size_s"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="badge__wrapper">
+                <div class="od-badge od-badge_status_expired od-badge_size_m">
+                  Просрочено
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-badge od-badge_status_expired od-badge_size_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- бейдж -->
+
+      <!-- меню нотификаций -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Меню нотификаций</div>
+          <div class="row-block__description">od-notifications-menu</div>
+        </div>
+
+        <div class="collapse">
+          <div class="row-block__description">
+            Меню нотификаций используется только в хэдере. Работа меню с кнопкой представлена в хэдере
+          </div>
+          <div class="notifications-menu__preview">
+            <div class="od-notifications-menu">
+              <div class="od-notifications-menu__item od-notifications-menu__item_status_is-new">
+
+              </div>
+              <div class="od-notifications-menu__item">
+
+              </div>
+              <div class="od-notifications-menu__item">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- меню нотификаций -->
 
     </main>
     <script src="./js/highlight.min.js"></script>
