@@ -10,18 +10,12 @@
   color: var(--color-bg-primary);
 }
 
-.od-header_side_left {
-}
+.od-header_side_left {}
 
 .od-header_side_right {
   display: flex;
   align-items: center;
   flex-direction: row;
-  cursor: pointer;
-}
-
-.od-header_side_right img {
-  margin-right: 4px;
 }
 
 .od-header__logo {

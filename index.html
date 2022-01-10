@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/components/od-collapse.css" />
     <link rel="stylesheet" href="./css/components/od-badge.css" />
     <link rel="stylesheet" href="./css/components/od-notifications-menu.css" />
+    <link rel="stylesheet" href="./css/components/od-user.css" />
     <!-- компоненты -->
 
     <!-- витрина -->
@@ -40,6 +41,7 @@
     <link rel="stylesheet" href="./css/helpers/content_collapse.css" />
     <link rel="stylesheet" href="./css/helpers/content_badge.css" />
     <link rel="stylesheet" href="./css/helpers/content_notifications-menu.css" />
+    <link rel="stylesheet" href="./css/helpers/content_user.css" />
     <!-- витрина -->
 
     <link rel="stylesheet" href="./css/stackoverflow-light.min.css" />
@@ -336,26 +338,29 @@
                 </div>
               
               </div>
-
-              <img
-                src="./img/userpic.png"
-                srcset="./img/userpic@2x.png 2x"
-                alt="userpic"
-              />
-              <div class="od-icon od-icon_size_s">
-                <svg
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="m3.646 6.354.708-.708L8 9.293l3.646-3.647.708.708L8 10.707 3.646 6.354Z"
-                  />
-                </svg>
+              <div class="od-user od-user_size_s od-user_type_has-icon">
+                <img
+                  src="./img/userpic.png"
+                  srcset="./img/userpic@2x.png 2x"
+                  alt="userpic"
+                />
+                <div class="od-icon od-icon_size_s">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m3.646 6.354.708-.708L8 9.293l3.646-3.647.708.708L8 10.707 3.646 6.354Z"
+                    />
+                  </svg>
+                </div>
+                <div class="od-user__label"></div>
               </div>
+              
             </div>
           </div>
           <pre><code class="language-html">&lt;div class="od-header"&gt;...&lt;/div&gt;</code></pre>
@@ -1520,12 +1525,70 @@
       </div>
       <!-- меню нотификаций -->
 
+      <!-- меню нотификаций -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Юзер</div>
+          <div class="row-block__description">od-user</div>
+        </div>
+
+        <div class="collapse">
+          <div class="row-block__description">
+            Компонент юзерпика в связке с дополнительным контентом или контролом
+          </div>
+          <div class="user__preview">
+            <div>
+              <div class="od-user od-user_size_s od-user_type_has-icon">
+                <img
+                  src="./img/userpic.png"
+                  srcset="./img/userpic@2x.png 2x"
+                  alt="userpic"
+                />
+                <div class="od-icon od-icon_size_s">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m3.646 6.354.708-.708L8 9.293l3.646-3.647.708.708L8 10.707 3.646 6.354Z"
+                    />
+                  </svg>
+                </div>
+                <div class="od-user__label"></div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-user od-user_size_s od-user_type_has-icon"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="od-user od-user_size_m od-user_type_has-label">
+                <img
+                  src="./img/userpic.png"
+                  srcset="./img/userpic@2x.png 2x"
+                  alt="userpic"
+                />
+                <div class="od-icon od-icon_size_s">
+                </div>
+                <div class="od-user__label">
+                  <p class="od-text od-text_size_s od-text_weight_bold">Петров А.К.</p>
+                  <p class="od-text od-text_size_s od-text_weight_regular">Специалист</p>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-user od-user_size_m od-user_type_has-label"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- меню нотификаций -->
+
     </main>
     <script src="./js/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
     </script>
-    <!-- <script src="./js/helpers/content-button.js"></script> -->
-    <!-- <script src="./js/helpers/content-input.js"></script> -->
   </body>
 </html>
